@@ -12,16 +12,10 @@ body{
     line-height: 1.5;
     color: #353535;
   }
+  
   .nav-header{
-    transition: all 1s;
-  }
-  .nav-header.grey{
     width: 100%;
-    background: #4e4e4e;
-    position: fixed;
     align-items: center;
-    transition: all 0.5s;
-    z-index: 999;
   }
   .nav-item p{
     color: #dfdede;
@@ -823,9 +817,6 @@ body{
       display: block;
     }
     /* Page PLTS Atap*/
-    .nav-header.grey {
-      transition: 500ms;
-    }
     .swiper-wrapper{
       flex-direction: column;
       align-items: center;
