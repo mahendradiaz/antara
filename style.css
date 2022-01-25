@@ -824,7 +824,7 @@ body{
     }
     /* Page PLTS Atap*/
     .nav-header.grey {
-      display: none;
+      transition: 500ms;
     }
     .swiper-wrapper{
       flex-direction: column;
