@@ -93,19 +93,19 @@
                     <form class="row g-3 needs-validation flex-column" novalidate>
                     <div class="col-md-4">
                       <label for="validationCustom01" class="form-label text-white">Input&nbsp;Listrik&nbsp;Perbulan</label>
-                      <input type="text" class="form-control" id="validationCustom01" placeholder="Contoh: 500000" required>
+                      <input type="number" class="form-control" onchange="calculateAmount(this.value)" id="validationCustom01" placeholder="Contoh: 500000" required>
                       <div class="valid-feedback">
                       </div>
                     </div>
                     <div class="col-md-4">
                       <label for="validationCustom02" class="form-label text-white">Daya&nbsp;Listrik&nbsp;Terpasang&nbsp;(Watt)</label>
-                      <input type="text" class="form-control" id="validationCustom02" placeholder="Contoh: 2200" required>
+                      <input type="number" class="form-control" id="validationCustom02" placeholder="Contoh: 2200" required>
                     </div>
                     <div class="col-md-4 d-flex">
-                     <p>Rp.</p> <span id="hasil"></span><p>,-/bulan</p>
+                     <p>Rp.</p><span id="hasil"></span><p>,-/bulan</p>
                     </div>
                     <div class="col-12">
-                      <button id="submit" class="btn btn-primary" onclick="return false;">Hitung</button>
+                      <button id="submit" class="btn btn-primary" onclick="return false">Hitung</button>
                     </div>
                   </div>
                 </div>
@@ -122,12 +122,12 @@
         <div class="mx-auto row">
           <div class="col-lg-7">
             <div class="pre-title mb1">
-              Tentang Kami
+             <p class="judul">Tentang Kami</p>
             </div>
             <div class="title mb1">
-              Platform inovasi yang terdiri dari ekosistem startup yang berfokus pada percepatan energi pintar di Indonesia
+             <p class="p1">Platform inovasi yang terdiri dari ekosistem startup yang berfokus pada percepatan energi pintar di Indonesia</p>
             </div>
-            <p class="text-soft-grey"> Kami menginvestasikan sumber daya kami dengan berkolaborasi dengan perusahaan rintisan dengan berbagai keahlian dalam Panel Surya EPC, Manajemen Baterai, Sistem Point of Sales (POS), Jaringan Kendaraan Elektronik, dan teknologi perangkat lainnya untuk menerapkan solusi hilir dalam misi mendemokratisasi energi pintar, terutama ultra- masyarakat mikro atau pedesaan.            </p>
+             <p class="p2 text-soft-grey"> Kami menginvestasikan sumber daya kami dengan berkolaborasi dengan perusahaan rintisan dengan berbagai keahlian dalam Panel Surya EPC, Manajemen Baterai, Sistem Point of Sales (POS), Jaringan Kendaraan Elektronik, dan teknologi perangkat lainnya untuk menerapkan solusi hilir dalam misi mendemokratisasi energi pintar, terutama ultra- masyarakat mikro atau pedesaan.</p>
           </div>
           <div class="col-lg-5 back-img">
           </div>
@@ -333,5 +333,6 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./js/slick.js"></script>
     <script type="text/javascript" src="JS/calculate.js"></script>
+    <script type="text/javascript" src="JS/scroll.js"></script>
   </body>
 </html>

@@ -133,6 +133,7 @@ body{
     padding: 120px 0;
     position: relative;
   }
+  
   .text-black{
     color: #353535 !important;
   }
@@ -331,16 +332,26 @@ body{
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  .pre-title{
+  .pre-title p{
     font-size: 1.25rem;
     color: #eb6c56;
     font-weight: 500;
   }
-  .title{
+  .p1{
     font-size: 2rem;
     color: #ffffff;
     line-height: 1.3;
     font-weight: 500;
+  }
+  .judul, .p1, .p2 {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1s;
+  }
+
+  .judul.muncul, .p1.muncul, .p2.muncul {
+    opacity: 1;
+    transform: translate(0,0);
   }
   .subtitle{
     font-size: 1.25rem;
