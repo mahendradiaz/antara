@@ -337,6 +337,11 @@ body{
     color: #eb6c56;
     font-weight: 500;
   }
+  .pre-title {
+    font-size: 1.25rem;
+    color: #eb6c56;
+    font-weight: 500;
+  }
   .p1{
     font-size: 2rem;
     color: #ffffff;
@@ -365,6 +370,11 @@ body{
   .price small{
     font-size: .8rem;
     margin-left: .5rem;
+  }
+  .title {
+    font-size: 1.25rem;
+    color: #ffffff;
+    font-weight: 500;
   }
   .value{
     font-size: 2.5rem;
