@@ -27,7 +27,7 @@ body{
   .nav-item p:hover{
     color: #828282;
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.07);
     /* transition: color 200ms ease-in-out; */
     transition: all 200ms ease-in-out;
   }
