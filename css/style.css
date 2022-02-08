@@ -27,7 +27,12 @@ body{
   .nav-item p:hover{
     color: #828282;
     cursor: pointer;
-    transition: color 200ms ease-in-out;
+    transform: scale(1.05);
+    /* transition: color 200ms ease-in-out; */
+    transition: all 200ms ease-in-out;
+  }
+  .nav-item p:active{
+    transform: scale(0.9);
   }
   .mt0{
     margin-top: 0 !important;
@@ -262,8 +267,27 @@ body{
     height: 44px;
     font-size: 0.75rem;
     border-color: transparent;
-    border-radius: 0;
+    border-radius: 5px;
     padding: 10px 40px;
+    outline-color: none;
+    outline: transparent;
+    transition: all .2s;
+  }
+  .btn.btn-primary:active{
+    font-weight: 700;
+    color: #eb6c56;
+    background-color: white;
+    transform: scale(0.9);
+    transition: all 50ms;
+  }
+  .text-center .btn.btn-primary:hover{
+    font-weight: 700;
+    color: #eb6c56;
+    background-color: white;
+    transform: scale(1.03);
+  }
+  .text-center .btn.btn-primary:active{
+    transform: scale(0.9);
   }
   .calculate .title{
     font-size: 1.5rem;
@@ -444,6 +468,13 @@ body{
   .sosmed a + a{
     margin-left: 1rem;
   }
+  .sosmed a img:hover {
+    transform: scale(1.20);
+    transition: all .3s ease-in-out;
+  }
+  .sosmed a img:active{
+    transform: scale(0.8);
+  }
   .copyright{
     font-size: .9rem;
   }
@@ -461,6 +492,13 @@ body{
     padding: 5px;
     right: 50px;
     z-index:100;
+  }
+  .wabutton:hover {
+    transform: scale(1.05);
+    transition: all .2s;
+  }
+  .wabutton:active{
+    transform: scale(0.9);
   }
 
   /* Material */
@@ -568,7 +606,7 @@ body{
 
 /* Page PLTS Atap */
 .main-back3{
-  background: url(assets/hero.jpg); 
+  background: url(../assets/hero.jpg); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -664,7 +702,7 @@ body{
 }
 /* Page Kontak */
 .main-back7{
-  background: url(assets/hero.jpg); 
+  background: url(../assets/hero.jpg); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
