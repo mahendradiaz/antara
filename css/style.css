@@ -315,7 +315,7 @@ body{
     padding-bottom: 120px;
   }
   .section.back-black .back-img {
-    background-image: url(assets/aboutus.jpg);
+    background-image: url(../assets/aboutus.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
