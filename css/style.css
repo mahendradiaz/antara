@@ -273,6 +273,10 @@ body{
     outline: transparent;
     transition: all .2s;
   }
+  .btn.btn-primary:focus{
+    outline: none;
+    box-shadow: none;
+  }
   .btn.btn-primary:active{
     font-weight: 700;
     color: #eb6c56;
@@ -285,6 +289,7 @@ body{
     color: #eb6c56;
     background-color: white;
     transform: scale(1.03);
+    transition: all 500ms;
   }
   .text-center .btn.btn-primary:active{
     transform: scale(0.9);
