@@ -962,6 +962,10 @@ body{
       margin-bottom: -20px;
       text-align: center;
     }
+    /* Page F.A.Q */
+    .row{
+      padding: 20px;
+    }
   }
   
   @media (min-width: 1025px) {
