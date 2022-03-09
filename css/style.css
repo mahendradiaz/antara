@@ -17,14 +17,14 @@ body{
     width: 100%;
     align-items: center;
   }
-  .nav-item p{
+  .nav-item a{
     color: #dfdede;
     font-size: 0.9rem;
     font-family: inter, sans-serif;
     margin-top: 10px;
     gap: 15px;
   }
-  .nav-item p:hover{
+  .nav-item a:hover{
     color: #828282;
     cursor: pointer;
     transform: scale(1.07);
@@ -299,7 +299,7 @@ body{
   .calculate .box{
     margin-top: 0;
     background-color: rgba(53,53,53,.8);
-    padding: 3rem 2rem;
+    padding: 40px;
   }
   .calculate .box input{
     background-color: rgba(255, 255, 255, 0.1);
@@ -502,6 +502,34 @@ body{
   .wabutton:active{
     transform: scale(0.9);
   }
+  .dropdown button{
+    background: transparent;
+    border: transparent;
+    margin-top: 8px;
+  }
+  .dropdown button:focus{
+    background: none;
+    border: none;
+    outline: none;
+  }
+  .dropdown-menu {
+    background: #4e4e4e;
+  }
+  /* Jquery Class */
+  .dropdown button.change-id::before{
+    background-image: url(../assets/indonesia.png);
+  }
+  .dropdown button.change-en::before{
+    background-image: url(../assets/united-states.png);
+  }
+  .dropdown-item span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #cdcdcd;
+  }
+  .dropdown-item:hover span{
+    color: #4e4e4e;
+  }
 
   /* Material */
   /* form starting stylings ------------------------------- */
@@ -616,7 +644,10 @@ body{
     -moz-animation: inputHighlighter 0.3s ease;
     animation: inputHighlighter 0.3s ease;
   }
-
+/* Page Beranda */
+.text-white {
+  text-align: start;
+}
 /* Page PLTS Atap */
 .main-back3{
   background: url(../assets/hero.jpg); 
@@ -637,11 +668,6 @@ body{
   padding-top: 100px;
   padding-bottom: 120px;
 }
-.row h1{
-  font-size: 2em;
-  color: #eb6c56;
-  text-align: center;
-}
 .back-black3 p{
   font-size: 0.9rem;
   color: #cdcdcd;
@@ -656,7 +682,7 @@ body{
 .nav-header4 {
   background-color: #4e4e4e;
 }
-.row h2{
+.content-opsi h2{
   text-align: center;
   margin-top: 70px;
   font-family: 'Open Sans', sans-serif;
@@ -714,13 +740,13 @@ body{
   color: #eb6c56;
 }
 /* Page F.A.Q */
-.row h2,h1{
+.content h2,h1{
   font-size: 2em;
   color: #eb6c56;
   text-align: center;
   font-family: 'Economica', sans-serif;
 }
-.row h3{
+.content h3{
   margin-top: 40px;
   font-size: 2em;
   color: #eb6c56;
@@ -935,6 +961,10 @@ body{
     .show-mobile {
       display: block;
     }
+    /* Page Beranda */
+    .button-aboutus{
+      margin-top: 30px;
+    }
     /* Page PLTS Atap*/
     .swiper-wrapper{
       flex-direction: column;
@@ -963,7 +993,7 @@ body{
       text-align: center;
     }
     /* Page F.A.Q */
-    .row{
+    .content{
       padding: 20px;
     }
   }
